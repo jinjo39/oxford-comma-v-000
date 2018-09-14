@@ -7,5 +7,6 @@ def oxford_comma(array)
   when array.count >= 3
     string = array.join(",")
     string.insert(-2,"and")
+  end
 
 end
