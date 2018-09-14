@@ -10,6 +10,7 @@ def oxford_comma(array)
     array.delete_at(-1)
     string = array.join(", ") << ", and "
     string << last_element.join(" ")
+    string
   end
 
 end
