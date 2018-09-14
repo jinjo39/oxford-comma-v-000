@@ -1,10 +1,9 @@
 def oxford_comma(array)
-  case array
-  when array.count == 1
+  if array.count == 1
     array.join
-  when array.count == 2
+  elsif array.count == 2
     array.join(" and ")
-  when array.count >= 3
+  else
     last_element = Array.new
     last_element << array[-1]
     array.delete_at(-1)
